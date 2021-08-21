@@ -118,16 +118,21 @@ header nav ul li {
   background-color: #cccccc;
   height: 51.25rem;
   color: #fff;
-  text-shadow: 3px 3px 3px #313131;
+  text-shadow: 4px 5px 4px #1d1d1d;
   text-align: center;
+}
+
+.hero-section h2,
+.hero-section h3 {
+  margin: 8rem 0;
 }
 
 .hero-section button {
   font-size: 1.8rem;
   margin-top: 4rem;
   background-color: #ffb6b9;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #ffffff;
 }
 
@@ -140,7 +145,12 @@ header nav ul li {
 .form-section {
   float: right;
   width: 100%;
-  background-color: #bbded6;
+  background-image: url("./images/arthur-lambillotte-sSJ44vZRTHw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 10;
+  background-color: #ecc7d2;
   height: 51.25rem;
   color: #fff;
   text-shadow: 3px 3px 3px #313131;
@@ -155,10 +165,21 @@ header nav ul li {
 .form-section .form label,
 .form-section .form input,
 .form-section .form textarea {
+  z-index: 1;
+  opacity: 0.7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   display: block;
   margin: 1.5rem auto;
   font-size: 1.5rem;
   width: 50%;
+  border-radius: 5px;
+}
+
+.form-section .form label:hover,
+.form-section .form input:hover,
+.form-section .form textarea:hover {
+  opacity: 1;
 }
 
 .form-section .form input {
@@ -168,6 +189,7 @@ header nav ul li {
 }
 
 .form-section .form button {
+  opacity: 0.7;
   font-size: 1.5rem;
   margin: 1rem 2rem;
   padding: 1rem 2rem;
@@ -179,11 +201,14 @@ header nav ul li {
   transition: 0.5s;
   color: #ffffff;
   width: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .form-section .form button:hover {
   cursor: pointer;
   background-color: #fae3d9;
   color: #ff999c;
+  opacity: 1;
 }
 /*# sourceMappingURL=app.css.map */
