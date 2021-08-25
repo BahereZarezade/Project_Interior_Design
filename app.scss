@@ -8,13 +8,13 @@
 html {
   font-size: 68.5%;
 }
-body {
+                  body {
   color: #313131;
   //font-family: "iransans";
   font-family: "Vazir" !important;
   line-height: 30px;
   /* حذف اسکرول افقی */
-  overflow-x: hidden;
+               overflow-x: hidden;
   .RightToLeft {
     direction: rtl;
     text-align: right;
